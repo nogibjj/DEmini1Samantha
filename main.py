@@ -8,4 +8,3 @@ if __name__ == "__main__":
     print("here we go! ")
     print("==This is not an easy work, but we did it!==")
     treat('Samantha','PaW')
-    treat('Samantha','PaW')
