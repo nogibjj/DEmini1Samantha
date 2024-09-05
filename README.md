@@ -11,7 +11,7 @@ Files required:
 
     requirements.txt: all Python dependencies required to run the project.
 
-    github actions in .github/workflows/: Contains CI workflow files tasks on Github
+    CI/CD Pipeline: github actions in .github/workflows/: Contains CI workflow files tasks on Github
 
     .devcontainer/: Contains configuration for setting up a consistent development environment
 
