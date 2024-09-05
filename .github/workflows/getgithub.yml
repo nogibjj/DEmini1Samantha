@@ -39,5 +39,5 @@ jobs:
       - name: Install dependencies
         run: |
             pip install --upgrade pip
-            pip install -r path/to/requirements.txt
+            pip install -r DEmini1Samantha/requirements.txt
         
