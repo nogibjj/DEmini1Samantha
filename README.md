@@ -27,10 +27,7 @@ Besides:
     test_main.py: Contains test cases for testing the main.py script.
     mylib.py: Contains helper functions and utilities for the project.
 
-    # NLP issues
-    bigram.py: Python script for implementing Bigram model logic.
-    train_bigram_model.py: Script to train the Bigram language model.
-    Unigram.py: Python script for implementing Unigram model logic.
+
 
 
 
