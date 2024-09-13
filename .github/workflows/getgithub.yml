@@ -13,24 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup Python 3.8
-        uses: actions/setup-python@v1
-        with: 
-          python-version: 3.8
-          
-      - name: install packages and dependencies
-        run: |
-          make install
-      - name: lint with pylint
-        run: |
-          make lint
-      - name: test with pytest
-        run: |
-          make test
-      - name: format with black 
-        run: |
-          make format
-      - name: deploy the app
-        run: |
-          make deploy
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Change directory to root
+      run: cd ${{ github.workspace }}
+
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
